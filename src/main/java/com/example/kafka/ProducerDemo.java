@@ -1,5 +1,7 @@
 package com.example.kafka;
 
+import static com.example.kafka.KafkaConstants.BOOTSTRAP_SERVERS;
+
 import java.util.Properties;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -9,7 +11,6 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 public class ProducerDemo {
 
-    public static final String BOOTSTRAP_SERVERS = "127.0.0.1:9092";
 
     public static void main(String[] args) {
         // create Producer properties

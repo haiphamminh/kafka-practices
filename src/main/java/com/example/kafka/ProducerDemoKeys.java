@@ -1,5 +1,7 @@
 package com.example.kafka;
 
+import static com.example.kafka.KafkaConstants.BOOTSTRAP_SERVERS;
+
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 
@@ -12,7 +14,6 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class ProducerDemoKeys {
-    public static final String BOOTSTRAP_SERVERS = "127.0.0.1:9092";
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // create Producer properties
